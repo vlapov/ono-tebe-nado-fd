@@ -1,1 +1,74 @@
 /* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+}
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 31.48px;
+}
+
+.header__links-list-item {
+  list-style: none;
+  position: relative;
+}
+
+.header__links-list-item:last-child {
+  padding-left: 4px;
+}
+
+.header__links-list-item::before {
+  content: '\25CB';
+  position: absolute;
+  top: -3px;
+  left: -19px;
+  font-size: 15px;
+}
+
+.header__links-list-item:last-child::before {
+  left: -18px;
+}
+
+.header__links-list-item_no-bullit {
+  border: none;
+}
+
+.header__links-list-item_no-bullit::before {
+  display: none;
+}
+
+a.header__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  vertical-align: top;
+  line-height: 0.7;
+  border-bottom: 1px solid #000;
+}
+
+a.header__link_active {
+  border: none;
+}
+
+a.header__logo {
+  width: 138px;
+  display: block;
+}
+
+.header__address {
+  max-width: 240px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  justify-self: end;
+  margin-top: -6px;
+}
+
+.header__address a {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
