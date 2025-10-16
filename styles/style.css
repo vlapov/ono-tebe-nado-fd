@@ -3,7 +3,11 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 91px;
+  padding: 92px 50px 95px;
+}
+
+.header__menu {
+  margin-top: 4px;
 }
 
 .header__links-list {
@@ -56,7 +60,7 @@ a.header__link_active {
 
 a.header__logo {
   display: block;
-  width: 138px;
+  width: 133px;
 }
 
 .address {
@@ -67,7 +71,6 @@ a.header__logo {
 .header__address {
   justify-self: end;
   max-width: 240px;
-  margin-top: -6px;
 }
 
 .address a {
@@ -218,11 +221,8 @@ a.header__logo {
   font-weight: bold;
   font-size: 22px;
   line-height: 120%;
+  text-decoration: underline;
   text-transform: uppercase;
-}
-
-.card__title-border {
-  border-bottom: 1px solid #fff;
 }
 
 .card__text {
@@ -231,11 +231,9 @@ a.header__logo {
 }
 
 .lots__look-more-link {
-  padding: 30px 0 0 40px;
-}
-
-.lots__look-more-link a {
+  display: inline-block;
   border-bottom: 1px solid #000;
+  margin: 30px 0 0 40px;
   font-size: 20px;
   line-height: 23px;
   text-decoration: none;
@@ -244,7 +242,7 @@ a.header__logo {
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  margin-top: 120px;
+  margin-top: 119px;
   padding: 35px 24px 0;
 }
 
