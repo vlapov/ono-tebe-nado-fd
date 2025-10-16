@@ -238,3 +238,48 @@ a.header__logo {
   line-height: 23px;
   text-decoration: none;
 }
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  margin-top: 120px;
+  padding: 35px 24px 0;
+}
+
+.about__column {
+  display: flex;
+  align-items: center;
+}
+
+.about__logo {
+  display: flex;
+  width: 240px;
+  height: 240px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  display: block;
+  width: 148px;
+  margin: auto;
+}
+
+.about__title {
+  padding: 10px 0 0 25px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 / 3;
+  gap: 24px;
+  padding: 7px 3px 0 25px;
+  font-size: 20px;
+  line-height: 24px;
+}
